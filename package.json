@@ -1,14 +1,33 @@
 {
   "name": "Sinergia_website",
   "private": true,
+  "version": "0.1.0",
+  "description": "Sinergia website. An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations",
+  "main": "app/javascript/packs/BurgerMenu.js",
+  "author": "Edward Almanzar from Menteware.com",
+  "homepage": "https://wwww.sinergia.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sinergiany/Sinergia_website.git"
+  },
   "dependencies": {
     "@rails/webpacker": "^3.3.1",
     "babel-preset-react": "^6.24.1",
+    "browserify-optional": "^1.0.1",
+    "classnames": "^2.2.5",
+    "eve": "^0.5.4",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-burger-menu": "^2.3.0",
+    "react-dom": "^16.2.0",
+    "snapsvg-cjs": "^0.0.6"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-optional"
+    ]
   }
 }
